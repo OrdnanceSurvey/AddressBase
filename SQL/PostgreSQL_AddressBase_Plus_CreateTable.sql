@@ -1,0 +1,97 @@
+#-------------------------------------------------------------------------------
+# Name:        `AddressBase Plus and AddressBase Plus Islands create table information for PostgreSQL
+# Purpose:     `This SQL code is to be used along side the Getting Started Guide
+#								to setup the OS AddressBase tables within a database
+# Created:     `19/02/2016
+# Copyright:   `(c) Ordnance Survey 2015
+# Licence:     `THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+#               "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+#               LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+#               FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+#               COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+#               INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+#               BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+#               OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+#               AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+#               OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+#               THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+#-------------------------------------------------------------------------------
+
+CREATE TABLE <INSERTTABLENAME>(
+UPRN bigint NOT NULL,
+UDPRN bigint,
+CHANGE_TYPE varchar,
+STATE bigint,
+STATE_DATE Date,
+CLASS varchar,
+PARENT_UPRN bigint,
+X_COORDINATE numeric,
+Y_COORDINATE numeric,
+LATITUDE numeric,
+LONGITUDE numeric,
+RPC bigint,
+LOCAL_CUSTODIAN_CODE bigint,
+COUNTRY varchar,
+LA_START_DATE Date,
+LAST_UPDATE_DATE Date,
+ENTRY_DATE Date,
+RM_ORGANISATION_NAME varchar,
+LA_ORGANISATION varchar,
+DEPARTMENT_NAME varchar,
+LEGAL_NAME varchar,
+SUB_BUILDING_NAME varchar,
+BUILDING_NAME varchar,
+BUILDING_NUMBER varchar,
+SAO_START_NUMBER bigint,
+SAO_START_SUFFIX varchar,
+SAO_END_NUMBER bigint,
+SAO_END_SUFFIX varchar,
+SAO_TEXT varchar,
+ALT_LANGUAGE_SAO_TEXT varchar,
+PAO_START_NUMBER bigint,
+PAO_START_SUFFIX varchar,
+PAO_END_NUMBER bigint,
+PAO_END_SUFFIX varchar,
+PAO_TEXT varchar,
+ALT_LANGUAGE_PAO_TEXT varchar,
+USRN bigint,
+USRN_MATCH_INDICATOR varchar,
+AREA_NAME varchar,
+LEVEL varchar,
+OFFICIAL_FLAG varchar,
+OS_ADDRESS_TOID varchar,
+OS_ADDRESS_TOID_VERSION bigint,
+OS_ROADLINK_TOID varchar,
+OS_ROADLINK_TOID_VERSION bigint,
+OS_TOPO_TOID varchar,
+OS_TOPO_TOID_VERSION bigint,
+VOA_CT_RECORD bigint,
+VOA_NDR_RECORD bigint,
+STREET_DESCRIPTION varchar,
+ALT_LANGUAGE_STREET_DESCRIPTION varchar,
+DEPENDENT_THOROUGHFARE varchar,
+THOROUGHFARE varchar,
+WELSH_DEPENDENT_THOROUGHFARE varchar,
+WELSH_THOROUGHFARE varchar,
+DOUBLE_DEPENDENT_LOCALITY varchar,
+DEPENDENT_LOCALITY varchar,
+LOCALITY varchar,
+WELSH_DEPENDENT_LOCALITY varchar,
+WELSH_DOUBLE_DEPENDENT_LOCALITY varchar,
+TOWN_NAME varchar,
+ADMINISTRATIVE_AREA varchar,
+POST_TOWN varchar,
+WELSH_POST_TOWN varchar,
+POSTCODE varchar,
+POSTCODE_LOCATOR varchar,
+POSTCODE_TYPE varchar,
+DELIVERY_POINT_SUFFIX varchar,
+ADDRESSBASE_POSTAL varchar,
+PO_BOX_NUMBER varchar,
+WARD_CODE varchar,
+PARISH_CODE varchar,
+RM_START_DATE Date,
+MULTI_OCC_COUNT bigint,
+VOA_NDR_P_DESC_CODE varchar,
+VOA_NDR_SCAT_CODE varchar,
+ALT_LANGUAGE varchar);
