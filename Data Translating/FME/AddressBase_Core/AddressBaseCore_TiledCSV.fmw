@@ -1,7 +1,7 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Command-line to run this workspace:
-#        "C:\Program Files\FME_2020_0_20218\fme.exe" C:\DATA\ABCore_AOICSV_combine.fmw
+#        "C:\Program Files\FME_2020_0_20218\fme.exe" "C:\DATA\AddressBase\Data Translating\FME\AddressBase_Core\AddressBaseCore_TiledCSV.fmw"
 #              --SourceDataset_CSV2_3 """"""..\SU0000.zip"" ""..\SU0005.zip"" ""..\SU0010.zip""""""
 #              --DestDataset_CSV2_3 "C:\DATA"
 #    
@@ -18,8 +18,8 @@
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="20218"
-#!   FME_DOCUMENT_GUID="798fe87e-6909-4f0d-8d06-064921e50752"
-#!   FME_DOCUMENT_PRIORGUID="6723663e-9eff-42fc-9926-efe70348135b,a2edfd58-558c-4c0e-ad2a-e813a5914169,5649eff1-cb90-4b97-93a3-1f69c8956ebf,94d4b6e9-2217-41b8-a0d3-4a7115b4a381"
+#!   FME_DOCUMENT_GUID="15642260-179c-47fa-b6cc-8d83470d811f"
+#!   FME_DOCUMENT_PRIORGUID="6723663e-9eff-42fc-9926-efe70348135b,a2edfd58-558c-4c0e-ad2a-e813a5914169,5649eff1-cb90-4b97-93a3-1f69c8956ebf,94d4b6e9-2217-41b8-a0d3-4a7115b4a381,798fe87e-6909-4f0d-8d06-064921e50752"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -28,7 +28,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2020.0.1.0 (20200407 - Build 20218 - WIN64)"
-#!   LAST_SAVE_DATE="2020-10-22T17:15:57"
+#!   LAST_SAVE_DATE="2020-10-23T12:10:24"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -47,7 +47,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-2775.23 0"
+#!   VIEW_POSITION="-2960.42 0"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="81"
@@ -66,7 +66,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_color string csv_line_number uint64 csv_skipped_line string fme_basename string fme_feature_type string multi_reader_id string fme_start_angle string csv_type string fme_fill_color string csv_total_number_of_columns uint32 fme_primary_axis string multi_reader_type string fme_rotation string multi_reader_full_id string fme_secondary_axis string csv_number_of_fields uint32 multi_reader_keyword string fme_type string fme_text_string string fme_sweep_angle string fme_dataset string fme_text_size string fme_geometry string"
+#!   EXPOSABLE_ATTRS="fme_text_size string fme_geometry string csv_type string multi_reader_keyword string multi_reader_full_id string multi_reader_type string csv_number_of_fields uint32 fme_sweep_angle string fme_feature_type string fme_basename string fme_type string fme_start_angle string fme_fill_color string fme_secondary_axis string csv_total_number_of_columns uint32 fme_dataset string fme_text_string string csv_line_number uint64 fme_color string multi_reader_id string fme_rotation string csv_skipped_line string fme_primary_axis string"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -125,7 +125,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE="csv_existing_file_handling Yes csv_write_field_names firstrow"
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_text_size string fme_secondary_axis string fme_sweep_angle string fme_primary_axis string fme_start_angle string fme_color string fme_geometry string fme_dataset string fme_basename string fme_type string csv_type string fme_text_string string fme_fill_color string fme_feature_type string fme_rotation string"
+#!   EXPOSABLE_ATTRS="csv_type string fme_type string fme_start_angle string fme_basename string fme_secondary_axis string fme_feature_type string fme_geometry string fme_rotation string fme_dataset string fme_text_size string fme_text_string string fme_sweep_angle string fme_primary_axis string fme_color string fme_fill_color string"
 #!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP csv_dataset_group csv_existing_file_handling Dataset&quot; &quot;&quot; &quot;GUI CHOICE csv_existing_file_handling Yes%No Overwrite Existing File&quot; Yes &quot;GUI OPTIONAL NAMEDGROUP csv_fields_group csv_write_field_names Fields&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE csv_write_field_names If&lt;space&gt;Writing&lt;space&gt;First&lt;space&gt;Row,firstrow%Yes,yes%No,no Write Field Names Row&quot; firstrow "
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS="&quot;*{}$"
@@ -879,7 +879,7 @@
 #! </FEATURE_TYPE>
 #! <FEATURE_TYPE
 #!   IS_SOURCE="false"
-#!   NODE_NAME="ABCore_AOI_Combined"
+#!   NODE_NAME="ABCore_Tiled_Combined"
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
 #!   IS_EDITABLE="true"
@@ -887,7 +887,7 @@
 #!   FEAT_GEOMTYPE="All"
 #!   POSITION="1303.7463165025997 -1201.4043817525646"
 #!   BOUNDING_RECT="1303.7463165025997 -1201.4043817525646 594.00106825772946 71"
-#!   ORDER="500000000000054"
+#!   ORDER="500000000000056"
 #!   COLLAPSED="true"
 #!   KEYWORD="CSV2_2"
 #!   PARMS_EDITED="true"
@@ -921,7 +921,7 @@
 #!     <FEAT_ATTRIBUTE ATTR_NAME="DELIVERY_POINT_SUFFIX" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="GSS_CODE" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <FEAT_ATTRIBUTE ATTR_NAME="CHANGE_CODE" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
-#!     <FEAT_ATTRIBUTE ATTR_NAME="Tile_Name" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="tilename" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="csv_dataset_group" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="csv_existing_file_handling" PARM_VALUE="Yes"/>
 #!     <DEFLINE_PARM PARM_NAME="csv_fields_group" PARM_VALUE=""/>
@@ -987,7 +987,7 @@
 #!   BOUNDING_RECT="-792.33252028259221 -923.36314309645127 657 400.48208228265651"
 #!   STICKY="true"
 #!   COLOUR="0.83529411764705885,0.71764705882352942,0.58039215686274515,1"
-#!   CONTENTS="7 2 "
+#!   CONTENTS="2 7 "
 #! >
 #! </BOOKMARK>
 #! <BOOKMARK
@@ -1046,10 +1046,10 @@
 #!     <XFORM_ATTR ATTR_NAME="DELIVERY_POINT_SUFFIX" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="GSS_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="CHANGE_CODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="Tile_Name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tilename" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="UPRN UPRN  NO_OP PARENT_UPRN PARENT_UPRN  NO_OP UDPRN UDPRN  NO_OP USRN USRN  NO_OP TOID TOID  NO_OP CLASSIFICATION_CODE CLASSIFICATION_CODE  NO_OP EASTING EASTING  NO_OP NORTHING NORTHING  NO_OP LATITUDE LATITUDE  NO_OP LONGITUDE LONGITUDE  NO_OP RPC RPC  NO_OP LAST_UPDATE_DATE LAST_UPDATE_DATE  NO_OP SINGLE_LINE_ADDRESS SINGLE_LINE_ADDRESS  NO_OP PO_BOX PO_BOX  NO_OP ORGANISATION ORGANISATION  NO_OP SUB_BUILDING SUB_BUILDING  NO_OP BUILDING_NAME BUILDING_NAME  NO_OP BUILDING_NUMBER BUILDING_NUMBER  NO_OP STREET_NAME STREET_NAME  NO_OP LOCALITY LOCALITY  NO_OP TOWN_NAME TOWN_NAME  NO_OP POST_TOWN POST_TOWN  NO_OP ISLAND ISLAND  NO_OP POSTCODE POSTCODE  NO_OP DELIVERY_POINT_SUFFIX DELIVERY_POINT_SUFFIX  NO_OP GSS_CODE GSS_CODE  NO_OP CHANGE_CODE CHANGE_CODE  NO_OP fme_basename Tile_Name  RENAME_SET_VALUE"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="UPRN UPRN  NO_OP PARENT_UPRN PARENT_UPRN  NO_OP UDPRN UDPRN  NO_OP USRN USRN  NO_OP TOID TOID  NO_OP CLASSIFICATION_CODE CLASSIFICATION_CODE  NO_OP EASTING EASTING  NO_OP NORTHING NORTHING  NO_OP LATITUDE LATITUDE  NO_OP LONGITUDE LONGITUDE  NO_OP RPC RPC  NO_OP LAST_UPDATE_DATE LAST_UPDATE_DATE  NO_OP SINGLE_LINE_ADDRESS SINGLE_LINE_ADDRESS  NO_OP PO_BOX PO_BOX  NO_OP ORGANISATION ORGANISATION  NO_OP SUB_BUILDING SUB_BUILDING  NO_OP BUILDING_NAME BUILDING_NAME  NO_OP BUILDING_NUMBER BUILDING_NUMBER  NO_OP STREET_NAME STREET_NAME  NO_OP LOCALITY LOCALITY  NO_OP TOWN_NAME TOWN_NAME  NO_OP POST_TOWN POST_TOWN  NO_OP ISLAND ISLAND  NO_OP POSTCODE POSTCODE  NO_OP DELIVERY_POINT_SUFFIX DELIVERY_POINT_SUFFIX  NO_OP GSS_CODE GSS_CODE  NO_OP CHANGE_CODE CHANGE_CODE  NO_OP fme_basename tilename  RENAME_SET_VALUE"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -1291,7 +1291,7 @@ CSV2_2_DATASET "$(DestDataset_CSV2_2)"
 #! END_WB_HEADER
 #! END_HEADER
 
-LOG_FILENAME "$(FME_MF_DIR)ABCore_AOICSV_combine.log"
+LOG_FILENAME "$(FME_MF_DIR)AddressBaseCore_TiledCSV.log"
 LOG_APPEND NO
 LOG_FILTER_MASK -1
 LOG_MAX_FEATURES 200
@@ -1313,7 +1313,7 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME ABCore_AOICSV_combine
+MACRO WORKSPACE_NAME AddressBaseCore_TiledCSV
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
@@ -1324,13 +1324,13 @@ CSV2_1_MERGE_DEF CSV2_1::CSV EXACT CSV DEFLINE fme_attribute_reading,defined,UPR
 FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV_CSV2_1 Splitter"    INPUT FEATURE_TYPE CSV    OUTPUT FEATURE_TYPE CSV_CSV2_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE CSV_CSV2_1    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "fme_basename" "Tile_Name" "" "RENAME_SET_VALUE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager    INPUT  FEATURE_TYPE CSV_CSV2_1    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "fme_basename" "tilename" "" "RENAME_SET_VALUE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_OUTPUT
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT TO CSV2 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>ABCore_AOI_Combined<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_OUTPUT TO CSV2 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>ABCore_Tiled_Combined<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-CSV2_2_DEF ABCore_AOI_Combined   csv_existing_file_handling   Yes   csv_write_field_names        firstrow   UPRN                         uint64   PARENT_UPRN                  uint64   UDPRN                        uint32   USRN                         uint32   TOID                         string   CLASSIFICATION_CODE          string   EASTING                      real64   NORTHING                     real64   LATITUDE                     y_coordinate   LONGITUDE                    x_coordinate   RPC                          uint8   LAST_UPDATE_DATE             string   SINGLE_LINE_ADDRESS          string   PO_BOX                       string   ORGANISATION                 string   SUB_BUILDING                 string   BUILDING_NAME                string   BUILDING_NUMBER              string   STREET_NAME                  string   LOCALITY                     string   TOWN_NAME                    string   POST_TOWN                    string   ISLAND                       string   POSTCODE                     string   DELIVERY_POINT_SUFFIX        string   GSS_CODE                     string   CHANGE_CODE                  string   Tile_Name                    string
+CSV2_2_DEF ABCore_Tiled_Combined   csv_existing_file_handling   Yes   csv_write_field_names        firstrow   UPRN                         uint64   PARENT_UPRN                  uint64   UDPRN                        uint32   USRN                         uint32   TOID                         string   CLASSIFICATION_CODE          string   EASTING                      real64   NORTHING                     real64   LATITUDE                     y_coordinate   LONGITUDE                    x_coordinate   RPC                          uint8   LAST_UPDATE_DATE             string   SINGLE_LINE_ADDRESS          string   PO_BOX                       string   ORGANISATION                 string   SUB_BUILDING                 string   BUILDING_NAME                string   BUILDING_NUMBER              string   STREET_NAME                  string   LOCALITY                     string   TOWN_NAME                    string   POST_TOWN                    string   ISLAND                       string   POSTCODE                     string   DELIVERY_POINT_SUFFIX        string   GSS_CODE                     string   CHANGE_CODE                  string   tilename                     string
