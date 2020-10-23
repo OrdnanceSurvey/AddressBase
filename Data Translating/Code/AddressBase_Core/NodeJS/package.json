@@ -1,0 +1,22 @@
+{
+  "name": "abcore-tiled-csv-processor",
+  "version": "1.0.0",
+  "description": "A NodeJS script to read Full Supply (FS) and Change-Only Update (COU) CSV files to create a single CSV file to use in other applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim Martin",
+  "license": "OGL-UK-3.0",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "async": "^3.2.0",
+    "chalk": "^4.1.0",
+    "dayjs": "^1.9.3",
+    "fs-extra": "^9.0.1",
+    "jsonfile": "^6.0.1",
+    "klaw-sync": "^6.0.0",
+    "node-stream-zip": "^1.11.3",
+    "pretty-ms": "^7.0.1"
+  }
+}
