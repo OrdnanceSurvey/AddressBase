@@ -177,34 +177,6 @@ STREET_END_Y DOUBLE PRECISION,
 STREET_TOLERANCE SMALLINT
 );
 
-CREATE TABLE abp_street
-(
-  RECORD_IDENTIFIER smallint,
-  CHANGE_TYPE character varying(1),
-  PRO_ORDER bigint,
-  USRN integer,
-  RECORD_TYPE smallint,
-  SWA_ORG_REF_NAMING smallint,
-  STATE smallint,
-  STATE_DATE date,
-  STREET_SURFACE smallint,
-  STREET_CLASSIFICATION smallint,
-  VERSION smallint,
-  STREET_START_DATE date,
-  STREET_END_DATE date,
-  LAST_UPDATE_DATE date,
-  RECORD_ENTRY_DATE date,
-  STREET_START_X double precision,
-  STREET_START_Y double precision,
-  STREET_START_LAT double precision,
-  STREET_START_LONG double precision,
-  STREET_END_X double precision,
-  STREET_END_Y double precision,
-  STREET_END_LAT double precision,
-  STREET_END_LONG double precision,
-  STREET_TOLERANCE smallint
-);
-
 --Street Descriptor
 CREATE TABLE abp_street_descriptor (
 RECORD_IDENTIFIER SMALLINT,
