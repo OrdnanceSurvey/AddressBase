@@ -17,6 +17,6 @@
     "jsonfile": "^6.0.1",
     "klaw-sync": "^6.0.0",
     "node-stream-zip": "^1.11.3",
-    "pretty-ms": "^7.0.1"
+    "pretty-ms": "^9.0.0"
   }
 }
