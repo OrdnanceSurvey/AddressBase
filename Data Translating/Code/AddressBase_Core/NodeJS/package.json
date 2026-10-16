@@ -11,7 +11,7 @@
   "dependencies": {
     "app-root-path": "^3.0.0",
     "async": "^3.2.0",
-    "chalk": "^4.1.0",
+    "chalk": "^6.0.0",
     "dayjs": "^1.9.3",
     "fs-extra": "^9.0.1",
     "jsonfile": "^6.0.1",
